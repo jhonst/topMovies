@@ -1,0 +1,22 @@
+
+<div *ngIf="(allMovies && allMovies.length > 0); else noMovies">
+    <div class="container-cards-movies container">
+        <h1 class="text-primary-gl">ALL MOVIES</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
+            <div class="col" *ngFor="let movie of allMovies" >
+                <div class="card bg-dark text-white card-movie" [routerLink]="['/randomMovie', movie.id]">
+                    <img src="{{'https://image.tmdb.org/t/p/original' + movie.poster_path}}" class="card-img" alt="...">
+                    <div class="card-img-overlay movie-description">
+                        <div class="card-text-movies">
+                            <p class="card-text">{{movie.title}}</p>
+                            <p class="card-text">{{movie.original_title}}</p>
+                            <p class="card-text">{{movie.release_date}}</p>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #noMovies>cargando...</ng-template>

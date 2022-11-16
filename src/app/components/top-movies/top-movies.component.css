@@ -1,0 +1,32 @@
+.container-top-movies{
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    /*margin: 30px;*/
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #240046;
+    box-shadow: 10px 10px 25px black;
+    /*#240046*/
+}
+
+.movie-element{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.img-element-movie{
+    width: 70px;
+    height: auto;
+}
+
+.text-top-movies{
+    margin-left: 15px;
+}
+
+.title-movies{
+    margin-bottom: 35px;
+}

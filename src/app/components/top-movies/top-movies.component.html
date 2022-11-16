@@ -1,0 +1,17 @@
+<div class="container-top-movies">
+
+    <h2 class="text-primary-gl title-movies">Top Movies</h2>
+
+    <div class="movie-element" *ngFor="let movie of topMovies">
+        <div class="img-element-movie">
+            <img src="{{'https://image.tmdb.org/t/p/original' + movie.poster_path}}" class="img-fluid rounded-start" alt="...">
+        </div>
+            <div class="text-top-movies">
+                <h5 class="text-white-gl">{{movie.title}}</h5> 
+                <p class="text-white-gl">{{movie.vote_average}}</p>
+            </div>
+    </div>
+
+
+    <br>
+</div>
